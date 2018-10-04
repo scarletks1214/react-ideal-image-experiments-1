@@ -10,7 +10,7 @@
     "react-ideal-image": "0.0.5",
     "react-scripts": "2.0.0-next.b2fd8db8",
     "react-waypoint": "8.0.3",
-    "sharp": "^0.20.2"
+    "sharp": "^0.21.0"
   },
   "devDependencies": {
     "filesize.macro": "^0.1.1",
