@@ -7897,6 +7897,10 @@ react-ideal-image@0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/react-ideal-image/-/react-ideal-image-0.0.5.tgz#92a1d6e7e6d5a32b2a6a41e82ffb7f122ed9bddf"
 
+react-is@^16.6.3:
+  version "16.8.2"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.2.tgz#09891d324cad1cb0c1f2d91f70a71a4bee34df0f"
+
 react-scripts@2.0.0-next.b2fd8db8:
   version "2.0.0-next.b2fd8db8"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-2.0.0-next.b2fd8db8.tgz#2d2aeac3a94ea7ceaf11479cfc7c17478e922e5e"
@@ -8026,12 +8030,13 @@ react-styleguidist@6.5.3:
     webpack-dev-server "^2.9.7"
     webpack-merge "^4.1.2"
 
-react-waypoint@8.0.3:
-  version "8.0.3"
-  resolved "https://registry.yarnpkg.com/react-waypoint/-/react-waypoint-8.0.3.tgz#860db860d3301c6f449800f7a330856028730af5"
+react-waypoint@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/react-waypoint/-/react-waypoint-9.0.0.tgz#a027deaafa60e3c2c998e78aa3542fa5ffc98afb"
   dependencies:
     consolidated-events "^1.1.0 || ^2.0.0"
     prop-types "^15.0.0"
+    react-is "^16.6.3"
 
 react@16.3.2:
   version "16.3.2"

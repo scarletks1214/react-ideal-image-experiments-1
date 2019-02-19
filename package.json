@@ -9,7 +9,7 @@
     "react-dom": "16.3.2",
     "react-ideal-image": "0.0.5",
     "react-scripts": "2.0.0-next.b2fd8db8",
-    "react-waypoint": "8.0.3",
+    "react-waypoint": "9.0.0",
     "sharp": "^0.20.2"
   },
   "devDependencies": {
