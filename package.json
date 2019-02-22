@@ -16,7 +16,7 @@
     "filesize.macro": "^0.1.1",
     "gh-pages": "1.2.0",
     "react-snap": "1.18.0",
-    "react-styleguidist": "6.5.3",
+    "react-styleguidist": "9.0.1",
     "rpi.macro": "0.1.1"
   },
   "scripts": {
