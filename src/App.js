@@ -11,11 +11,12 @@ const Image = props => <IdealImage {...props} />
 
 Image.defaultProps = {
   ...IdealImage.defaultProps,
-  threshold: 2000,
+  threshold: 100,
 }
 
 const src = ({name, ext, digest, width}) =>
   `./images/${name}-${width}.${digest}.${ext}`
+
 
 const props = obj => ({
   width: obj.width,
@@ -26,6 +27,24 @@ const props = obj => ({
     return src({...obj, ext, width})
   },
   srcSet: obj.sizes,
+  getIcon: state => {
+    let loadState = state.loadState,
+    overThreshold = state.overThreshold;
+
+    if (typeof window === 'undefined' || window.navigator.userAgent === 'ReactSnap') return 'noicon';
+    switch (loadState) {
+      case 'loaded':
+        return 'loaded';
+      case 'loading':
+        return overThreshold ? 'loading' : 'noicon';
+      case 'initial':
+        return 'loading';
+      case 'error':
+        return 'error'
+      default:
+        throw new Error('Wrong state: ' + loadState);
+    }
+  }
 })
 
 const App = () => (
